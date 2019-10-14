@@ -17,7 +17,7 @@ class CommentForm(forms.Form):
         comment_text = self.cleaned_data['comment_text']
         if comment_text:
             return comment_text
-        raise forms.ValidationError('Please write some comment!from forms.py')
+        raise forms.ValidationError('Please write some comment!')
 
     class Meta:
         model = Comment
